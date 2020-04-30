@@ -23,6 +23,7 @@ defmodule HelloWeb do
 
       import Plug.Conn
       import HelloWeb.Gettext
+      import HelloWeb.Auth, only: [authenticate_user: 2]
       alias HelloWeb.Router.Helpers, as: Routes
     end
   end
@@ -50,6 +51,7 @@ defmodule HelloWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+      import HelloWeb.Auth, only: [authenticate_user: 2]
     end
   end
 
