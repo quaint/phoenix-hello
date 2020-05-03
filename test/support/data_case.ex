@@ -23,7 +23,9 @@ defmodule Hello.DataCase do
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
+      
       import Hello.DataCase
+      import Hello.TestHelpers
     end
   end
 
