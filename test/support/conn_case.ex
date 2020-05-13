@@ -21,6 +21,7 @@ defmodule HelloWeb.ConnCase do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
+      import Hello.TestHelpers
       alias HelloWeb.Router.Helpers, as: Routes
 
       # The default endpoint for testing
