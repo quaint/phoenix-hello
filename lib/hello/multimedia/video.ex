@@ -10,6 +10,7 @@ defmodule Hello.Multimedia.Video do
     field :slug, :string
     belongs_to :user, Hello.Accounts.User
     belongs_to :category, Hello.Multimedia.Category
+    has_many :annotations, Hello.Multimedia.Annotation
 
     timestamps()
   end
